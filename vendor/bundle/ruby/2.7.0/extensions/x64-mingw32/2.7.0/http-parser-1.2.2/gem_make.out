@@ -1,0 +1,5 @@
+current directory: C:/foodlog/foodlog/vendor/bundle/ruby/2.7.0/gems/http-parser-1.2.2/ext
+C:/Ruby27-x64/bin/ruby.exe -IC:/Ruby27-x64/lib/ruby/2.7.0/rubygems -rrubygems C:/foodlog/foodlog/vendor/bundle/ruby/2.7.0/gems/rake-13.0.1/exe/rake RUBYARCHDIR\=C:/foodlog/foodlog/vendor/bundle/ruby/2.7.0/extensions/x64-mingw32/2.7.0/http-parser-1.2.2 RUBYLIBDIR\=C:/foodlog/foodlog/vendor/bundle/ruby/2.7.0/extensions/x64-mingw32/2.7.0/http-parser-1.2.2
+mkdir -p x86_64-windows/http-parser
+x86_64-w64-mingw32-gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -Wall -Wextra -O3 -D_GNU_SOURCE=1 -fPIC   -o x86_64-windows/http-parser/http_parser.o -c ./http-parser/http_parser.c
+x86_64-w64-mingw32-gcc -shared -o x86_64-windows/http-parser-ext.dll x86_64-windows/http-parser/http_parser.o -fexceptions 
